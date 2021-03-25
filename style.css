@@ -1,0 +1,698 @@
+/* fonte configurada */
+@font-face {
+  font-family: "Segoe UI";
+  src: url("./Assets/Fonte/segoeui.ttf") format("opentype"),
+    url("./Assets/Fonte/segoeuib.ttf") format("embedded-opentype");
+  src: url("./Assets/Fonte/segoeuil.ttf") format("embedded-opentype");
+}
+
+/* Base */
+ 
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI";
+}
+/* configuração */
+h1,
+h2,
+h3,
+h4 {
+  margin: 0.9rem 0;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+/* configuração grid */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+/* backgronud inicio */
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section01 {
+  text-align: center;
+  padding-bottom: 60px;
+  padding: 50px;
+}
+ 
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10%;
+  box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 54%);
+  object-fit: contain;
+  color: rgb(255, 255, 255);
+}
+
+/* Navbar */
+nav {
+  background: #2571b7;
+  height: 80px;
+  width: 100%;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu {
+  display: grid;
+  width: 60vw;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  justify-content: right;
+}
+
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+a.active,
+a:hover {
+  background: #002050;
+  transition: 0.5s;
+}
+
+/* Navbar Logo */
+.logo {
+  color: #fff;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Primeiro Botão Navbar */
+.button {
+  background-color: #002050;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button:hover {
+  transition: all 0.3s ease-out;
+  background: rgb(255, 255, 255);
+  color: #242424;
+  transition: 250ms;
+}
+
+/* Segundo Botão Navbar */
+.button2 {
+  background-color: #00aff0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button2:hover {
+  transition: all 0.3s ease-out;
+  background: rgb(255, 255, 255);
+  color: #242424;
+  transition: 250ms;
+}
+
+/* Propriedades Botão */
+.buttonposition {
+  float: right;
+  margin: 10px;
+  padding: 10px;
+}
+.buttonlink {
+  display: contents;
+}
+
+/* Card section 2 */
+.card {
+  background-color: dodgerblue;
+  color: white;
+  padding: 10px;
+}
+
+.cards {
+  max-width: 1368px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  padding: 20px;
+}
+
+.img-responsive {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  padding: 40px 20px;
+  display: flex;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card section 3 */
+.card-sec4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 1.5rem;
+}
+
+.cards2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  padding: 20px;
+}
+
+.img-card4 {
+  padding: 2rem;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 5px;
+}
+
+.img-card4:hover {
+  transition: all 0.3s ease-out;
+  background: #002050;
+  color: #242424;
+  transition: 250ms;
+}
+
+.container-card4 {
+  display: flex;
+  text-align: center;
+  padding: 0 8rem 5rem;
+}
+
+.container-cards {
+  margin: 0 10rem;
+  display: flex;
+}
+
+/* quarto Botão card*/
+.button3 {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+}
+
+/* Botão VERDE */
+.btncad1:hover {
+  transition: all 0.3s ease-out;
+  background: #7fba00;
+  color: #ffffff;
+  transition: 250ms;
+}
+
+.btncad1 {
+  color: #7fba00;
+  border: 2px solid #7fba00;
+}
+
+/* Botão AZUL*/
+.btncad2:hover {
+  transition: all 0.3s ease-out;
+  background: #00a4ef;
+  color: #ffffff;
+  transition: 250ms;
+}
+
+.btncad2 {
+  color: #00a4ef;
+  border: 2px solid #00a4ef;
+}
+
+/* Botão LARANJA*/
+.btncad3:hover {
+  transition: all 0.3s ease-out;
+  background: #ffb900;
+  color: #ffffff;
+  transition: 250ms;
+}
+
+.btncad3 {
+  color: #ffb900;
+  border: 2px solid #ffb900;
+}
+
+/* Title Card Verde/Azul/laranja */
+.cardtitle1 {
+  padding: 1.5rem 1.5rem;
+  color: #7fba00;
+  font-weight: 600;
+}
+
+.cardtitle2 {
+  padding: 1.5rem 1.5rem;
+  color: #00a4ef;
+  font-weight: 600;
+}
+
+.cardtitle3 {
+  padding: 1.5rem 1.5rem;
+  color: #ffb900;
+  font-weight: 600;
+}
+
+.pcard {
+  padding: 0 2rem 1rem;
+  color: #929292;
+  font-weight: 500;
+}
+
+/* cor da imagem section 4 */
+.img-card1 {
+  background-color: #7fba00;
+}
+
+.img-card2 {
+  background-color: #00a4ef;
+}
+
+.img-card3 {
+  background-color: #ffb900;
+}
+
+/* section 4 */
+.cards4 {
+  max-width: 1368px;
+  margin: 0 auto;
+  display: grid;
+  padding: 20px;
+}
+
+.card4 {
+  border: 5px solid #d9d9d9;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Linha section 4 */
+.meudeus {
+  border-bottom: 3px solid #dfdfdf;
+  width: 15%;
+  margin: 0 auto;
+}
+ 
+/*   Section 5  */
+.section5 {
+  background-image: url(./Assets/img/achievement-adult-agreement-1391373.png);
+  background-blend-mode: multiply;
+  background-color: #444;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.title-section5 {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem 4rem;
+  font-weight: 300;
+}
+
+.title-section6 {
+  color: #929292;
+  padding: 3rem 5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Footer */
+.container-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.ccontainerlogofooter {
+  margin: 5rem 1rem 1rem 1rem;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  color: #d2d2d2;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Formulario */
+input[type="text"] {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.buttonform {
+  background-color: #00a4ef;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.containerform {
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+}
+
+.colform {
+  width: 100%;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*****************/
+/*****************/
+/*****************/
+/*****************/
+/* Icone menu @media*/
+.checkbtn {
+  font-size: 50px;
+  color: white;
+  float: left;
+  padding-left: 25px;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+/* @media 600px */
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cards4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* @media 858px */
+@media (max-width: 858px) {
+  .logo img {
+    font-size: 30px;
+    padding-left: 50px;
+    position: fixed;
+    contain: size;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2571b7;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: #002050;
+    color: #ffffff;
+  }
+  #check:checked ~ ul {
+    left: 0;
+    left: 0;
+    display: block;
+    width: -webkit-fill-available;
+    margin-right: auto;
+    position: absolute;
+  }
+
+  .container-cards {
+    display: block;
+    margin: 0;
+  }
+
+  .card-sec4 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 1.5rem;
+  }
+
+  .card-mobile {
+    text-align: justify;
+  }
+
+  .card-sec4 {
+    margin-bottom: 2rem;
+  }
+
+  .p2-card-lorem {
+    padding-right: 2rem;
+  }
+
+  .meudeus {
+    width: 100%;
+  }
+
+  .container {
+    color: white;
+    text-align: center;
+  }
+}
+
+/* @media 900px */
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cards4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* @media 952px */
+@media (max-width: 952px) {
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .botaolorem {
+    margin-inline-start: auto;
+  }
+  .title-section5 {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 4rem;
+    font-weight: 300;
+  }
+}
+
+/* * * * * * * * * * * * / 
+/* Scroll Configuração */
+#sec-1 {
+  background: url(./Assets/img/bg1.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  background-position: center;
+}
+#sec-2 {
+  background-color: aliceblue;
+}
+
+/* Scrolldown Seta Animada */
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  position: absolute;
+  bottom: 20px;
+  color: aliceblue;
+  cursor: pointer;
+}
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 40px;
+  width: 40px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid rgb(255, 255, 255);
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.3s;
+}
+
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+
+/* Scroll Divs Configuração */
+[data-scroll] {
+  transition: opacity 2s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+}
+[data-scroll="out"] {
+  opacity: 0;
+}
