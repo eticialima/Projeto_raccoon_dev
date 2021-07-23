@@ -15,13 +15,6 @@
 <p>Eu construí um site responsivo atraves de um projeto da empresa Raccoon, onde o objetivo era replicar o modelo que eles enviaram. 
 Foi utilizado nesse projeto ferramentas como html/CSS e basico de JS para animações.</p> 
  
-
-### Arquivos no repositorio
-* index.html
-* style.css
-* Assest.pasta  
-* git.pasta 
-
 ### Como usar ? 
 <p>- index.html</P><p> Você pode baixar o repositorio ou clona-lo e depois executar o arquivo index.html para visualizar o site na web.</P> 
 
